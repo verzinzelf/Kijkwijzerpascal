@@ -1,5 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import = "Kijkwijzer.*" %>
+<%@page import = "pack.*" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,11 +7,11 @@
         <link href="index.css" rel="stylesheet" type="type/css" media="screen">
         <title>Kijkwijzer</title>
      <%
-            Kijkwijzer kijk;
+            Filmlijst films;
             
-            kijk = new Kijkwijzer();
+            films = new Filmlijst();
         
-            kijk.voegtoefilm();
+            films.voegtoefilm();
    
       %>   
     </head>
@@ -32,7 +32,7 @@
                 
                 <button type="submit" id="verzenden">Verzend</button>
                 </form>
-               <%=kijk.maakPagina() %>
+               <%=films.maakPagina() %>
             </div>
         </div>
         
