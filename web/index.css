@@ -38,6 +38,11 @@ and open the template in the editor.
 }
 
 .informatie{
-    display: block;
+    
     color: red;
+}
+
+.kijkwijzer{
+    width: 100px;
+    height: auto;
 }
